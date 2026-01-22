@@ -14,10 +14,14 @@ pipeline {
         }
 
         stage('Build & Test with Coverage') {
+            tools {
+                maven 'Maven_3'
+            }
             steps {
                 bat 'mvn clean verify'
             }
         }
+
 
         
     }
