@@ -15,7 +15,7 @@ pipeline {
 
         stage('Build & Test with Coverage') {
             steps {
-                sh 'mvn clean verify'
+                bat 'mvn clean verify'
             }
         }
 
